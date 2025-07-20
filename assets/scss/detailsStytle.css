@@ -1,0 +1,49 @@
+.product-row {
+    margin: 0 -4px;
+    display: flex;
+    flex-wrap: wrap;/*fxw:w*/
+}
+
+.product-col {
+    width: calc(100% / 12 * 6);
+    padding: 0 4px;
+}
+
+.text-stytle {
+    color: var(--neutral-500);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+/*商品顏色*/
+.product-stytle {
+    width: 64px;
+    text-align: center;
+    color: var(--neutral-600);
+    font-weight: 500;
+}
+
+/*商品尺吋*/
+.btn-wrapper {
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+}
+
+.btn-wrapper.active,
+.btn-wrapper:hover {
+    border: 1px solid var(--neutral-900);
+}
+
+.btn-size {
+    width: 259px;
+}
+
+/*商品說明*/
+.text-fw {
+	font-weight: 500;
+}
+
+.border-bottom {
+	border-bottom: 1px solid var(--neutral-300);/*bdt+*/
+}

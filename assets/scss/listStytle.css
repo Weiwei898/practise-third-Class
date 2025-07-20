@@ -1,0 +1,14 @@
+.item-list .all-list {
+    color: var(--primary-400);
+}
+
+.page-item .btn {
+    border-radius: 0;
+    padding: 8px 15px;
+    font-weight: 400;
+}
+
+.page-item:active {
+    background-color:var(--primary-300);
+    font-weight: 500;
+}

@@ -1,0 +1,424 @@
+/*引入字體*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/*css reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css變數進行網站主色設定*/
+:root {
+	--primary-100:#F5FEE7;
+    --primary-200:#E8FEC5;
+	--primary-300:#C0FA73;/*Default預設及Hover background-color */
+	--primary-400:#57A203;/*css變數進行網站主色設定*/
+	--primary-500:#477A11;/*Hover color*/
+	--neutral-0:#FFFFFF;
+	--neutral-100:#F8F9FA;
+	--neutral-200:#E9ECEF;
+	--neutral-300:#DEE2E6;
+	--neutral-400:#CED4DA;
+	--neutral-500:#ADB5BD;/*css變數進行網站主色設定*/
+	--neutral-600:#6C757D;/*css變數進行網站主色設定*/
+	--neutral-700:#495057;
+	--neutral-800:#343A40;
+	--neutral-900:#212529;/*Default預設*/
+	--danger-300:#D74F4F;
+}
+/*標籤基本樣式*/
+
+*,*::before,*::after{
+    box-sizing: border-box;/*bxz:bb*/
+	/*outline: solid 1px;測試範圍用*/
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;/*ff*/
+    font-size: 16px;/*大小 fz*/
+    line-height:1.5;/*行高 lh*/
+    letter-spacing:0.05em;/*字距 lts*/
+	color: var(--neutral-900);
+
+}
+
+img {
+    vertical-align: middle;/*控制 行內元素（inline 或 inline-block 元素） middle為中間對齊 va:m*/
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--neutral-900);
+    text-decoration: none;/*td:n*/
+    display: block;/*db*/
+	font-weight: 500;/*fw*/
+}
+ 
+/*通用樣式*/
+.container{
+	width: 1296px;
+	margin: 0 auto;
+}
+
+.row {/*父層排列樣式，因為欄位有推12px，所以要減12px)*/
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -12px;
+}
+
+.col-1 {
+	padding: 0 12px;
+	width: calc(100% / 12);/*欄位樣式，100%除12欄(設計槁shift+G)*/
+}
+
+.col-2 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 2);/*欄位樣式，100%除12欄(設計槁shift+G)，乘2就是佔2個欄位寬度*/
+}
+
+.col-3 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 3);/*欄位樣式，100%除12欄(設計槁shift+G)，乘3就是佔3個欄位寬度*/
+}
+
+.col-4 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 4);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-5 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 5);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-6 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 6);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-7 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 7);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-8 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 8);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-9{
+	padding: 0 12px;
+	width: calc(100% / 12 * 9);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-10 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 10);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-11 {
+	padding: 0 12px;
+	width: calc(100% / 12 * 11);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.col-12 {
+	padding: 0 12px;
+	width: 100%;/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+}
+
+.h1 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.h2 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.h3 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.h4 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.h5 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.h6 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.text-sm {
+	font-size: 14px;
+}
+
+.text-neutral-600 {
+	color: var(--neutral-600);
+}
+
+.text-primary-400 {
+	color: var(--primary-400);
+}
+
+.text-danger {
+	color: var(--danger-300);
+}
+
+.bg-primary-200 {
+	background: var(--primary-200);
+}
+
+.bg-neutral-100 {
+	background: var(--neutral-100);
+}
+
+.p-12 {
+	padding: 12px;
+}
+
+
+.p-32 {
+	padding: 32px;
+}
+
+.py-8 {
+	padding: 8px 0;/*上下 右左*/
+}
+
+.py-12 {
+	padding: 12px 0;
+}
+
+.py-16 {
+	padding: 16px 0;/*上下 右左*/
+}
+
+.py-24 {
+	padding: 24px 0;
+}
+
+.py-32 {
+	padding: 32px 0;
+}
+
+.py-48 {
+	padding: 48px 0;
+}
+
+.py-64 {/*通常距離設計會是4跟8的倍數，所以也可以統一py-64->py-16*/
+	padding: 64px 0;
+}
+
+.pt-32 {
+	padding-top: 32px;
+}
+
+.pb-4 {
+	padding-bottom: 4px;
+}
+
+.pb-12 {
+	padding-bottom: 12px;
+}
+
+.pb-48 {
+	padding-bottom: 48px;
+}
+
+.pe-8 {
+	padding-right: 8px;
+}
+
+.mb-4 {
+	margin-bottom: 4px;
+}
+
+.mb-8 {
+	margin-bottom: 8px;
+}
+
+.mb-12 {
+	margin-bottom: 12px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-48 {
+	margin-bottom: 48px;
+}
+
+.mb-64 {
+	margin-bottom: 64px;
+}
+
+.me-8 {
+	margin-right: 8px;
+}
+
+.me-12 {
+	margin-right: 12px;
+}
+
+.me-24 {
+	margin-right: 24px;
+}
+
+.me-40 {
+	margin-right: 40px;
+}
+
+.me-48 {
+	margin-right: 48px;
+}
+
+/*display: flex*/
+.d-f {
+    display: flex; 
+}
+
+.justify-between {
+	justify-content:space-between;/*jcsb*/
+}
+
+.justify-center {
+	justify-content: center;/*主軸置中*/
+}
+
+.align-center {
+	align-items: center;/*交錯軸置中 aic*/
+}
+
+.align-end {
+	align-items:flex-end;/*交錯軸置中 aife*/
+}
+
+.flex-wrap {
+	flex-wrap: wrap;/*換行*/
+}
+
+/*Button*/
+.btn {
+	font-size: 16px;/*fz*/
+	font-weight: 500;/*fw*/
+	line-height: 1.5;/*lh*/
+	border: none;/*bdn*/
+	background-color: transparent;/*bgc:t 透明*/
+	border-radius: 4px;/*bdrs*/
+	padding: 12px 24px;/*p*/
+	cursor: pointer;/*cur:p*/
+	/*default: 顯示預設的游標，通常是箭頭。 
+	auto: 讓瀏覽器自動判斷游標樣式。 
+	crosshair: 顯示十字線，常用於選擇或標記。 
+	pointer: 顯示手型，通常用於連結或可點擊的元素。 
+	text: 顯示文字輸入游標，例如在輸入框中。 
+	move: 顯示移動游標，用於移動元素。 
+	progress: 表示程式正在處理中，但用戶仍可與其他元素互動。 
+	wait: 表示程式正在忙碌中，用戶不可與其他元素互動。 
+	help: 顯示問號，表示有幫助資訊。 
+	not-allowed: 表示不允許的操作。 
+	url(): 可以指定一個URL 來使用自定義的游標圖片，例如 cursor: url("my-cursor.png"), auto;，如果瀏覽器不支持自定義圖片，則會使用 auto 提供的游標。 */
+
+}
+
+/*元件*/
+.breadcrumb-item + .breadcrumb-item::before {
+	content: '/';
+	padding: 0 12px;
+	color: var(--neutral-300);
+	font-weight: 700;
+}
+
+.breadcrumb-item {
+	display: flex;
+	font-weight: 500;
+}
+
+.breadcrumb-link {
+	color: var(--neutral-600);	
+}
+
+.btn-bark{
+	background: var(--neutral-900);
+	color: var(--neutral-0);
+}
+
+.Copyright {
+	text-align: center;/*ta:c*/
+	color: var(--neutral-600);
+}
+
+.border-top {
+	border-top: 1px solid var(--neutral-300);/*bdt+*/
+}
