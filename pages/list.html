@@ -7,20 +7,9 @@
     <title>list page</title>
 </head>
 <body>
-    <nav class="container py-16 d-f justify-between align-center">
-        <div class="navber-lift">   
-            <ul class="d-f py-12 align-center">
-                <li class="me-48">
-                    <a href="index.html"><img src="../assets/images/logo.svg" alt="Logo" title="URBNSTEP Logo"></a>
-                </li>
-                <li class="me-40"><a href="#"></a>商品列表</li>
-                <li><a href="#"></a>品牌故事</li>
-            </ul>
-        </div>
-        <div class="navbar-right">
-            <a href="#" class="p-12"><i class="bi bi-person"></i></a>
-        </div>
-    </nav>
+
+    <%- include("./layout/nav") %>
+
     <main class="container py-32 mb-48">
         <!-- Breadcrumb 麵包屑 -->
         <nav class="mb-24">
@@ -192,27 +181,10 @@
         </div>
         
     </main>
-    <div class="d-f bg-primary-200 justify-center align-center py-24 mb-64">
-        <p class="h4 me-24">加入會員取得 9 折優惠</p>
-        <button type="button" class="btn btn-bark">馬上註冊</button>
-    </div>
-    <footer>
-        <div class="container d-f justify-between align-center mb-24">
-            <div class="footer-left">
-                <a href="index.html"><img src="../assets/images/logo.svg" alt="Logo" title="URBNSTEP Logo"></a>
-            </div>
-            <div class="footre-right ">
-                <ul class="d-f py-12">
-                    <li class="me-40"><a href="#">商品列表</a></li>
-                    <li><a href="#">品牌故事</a></li>
-                </ul>
-            </div>
-        </div>
-            <ul class="Copyright container text-sm mb-64">
-                <li class="pt-32 pb-4 border-top">Copyright ©2025 URBNSTYLE</li>
-                <li>All Rights Reserved.</li>
-            </ul>
-    </footer>
+    
+    <%- include("./layout/footer-nav") %>
+    <%- include("./layout/footer") %>
+
 <script type="module" src="../main.js"></script>
 </body>
 </html>
