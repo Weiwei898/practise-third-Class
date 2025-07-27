@@ -110,66 +110,79 @@ a {
 .row {/*父層排列樣式，因為欄位有推12px，所以要減12px)*/
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -12px;
+	margin-right: -12px;
+	margin-left: -12px;
 }
 
 .col-1 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12);/*欄位樣式，100%除12欄(設計槁shift+G)*/
 }
 
 .col-2 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 2);/*欄位樣式，100%除12欄(設計槁shift+G)，乘2就是佔2個欄位寬度*/
 }
 
 .col-3 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 3);/*欄位樣式，100%除12欄(設計槁shift+G)，乘3就是佔3個欄位寬度*/
 }
 
 .col-4 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 4);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-5 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 5);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-6 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 6);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-7 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 7);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-8 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 8);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-9{
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 9);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-10 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 10);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-11 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: calc(100% / 12 * 11);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
 .col-12 {
-	padding: 0 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	width: 100%;/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
@@ -213,8 +226,20 @@ a {
 	font-size: 14px;
 }
 
+.text-neutral-0 {
+	color: var(--neutral-0);
+}
+
+.text-neutral-500.text-neutral-500 {
+	color: var(--neutral-500);
+}
+
 .text-neutral-600 {
 	color: var(--neutral-600);
+}
+
+.text-primary-300.text-primary-300 {
+	color: var(--primary-300);
 }
 
 .text-primary-400 {
@@ -278,6 +303,10 @@ a {
 	padding-bottom: 4px;
 }
 
+.pb-8 {
+	padding-bottom: 8px;
+}
+
 .pb-12 {
 	padding-bottom: 12px;
 }
@@ -292,6 +321,10 @@ a {
 
 .pb-48 {
 	padding-bottom: 48px;
+}
+
+.pb-64 {
+	padding-bottom: 64px;
 }
 
 .pe-8 {
@@ -334,6 +367,14 @@ a {
 	margin-bottom: 64px;
 }
 
+.my-48 {
+	margin: 48px 0;
+}
+
+.my-64 {
+	margin: 64px 0;
+}
+
 .me-8 {
 	margin-right: 8px;
 }
@@ -364,7 +405,7 @@ a {
 }
 
 .justify-center {
-	justify-content: center;/*主軸置中*/
+	justify-content: center;/*主軸置中 jc:c*/
 }
 
 .align-center {
@@ -381,7 +422,7 @@ a {
 }
 
 .fxd-c {
-	flex-direction: column;
+	flex-direction: column;/*垂直*/
 }
 
 

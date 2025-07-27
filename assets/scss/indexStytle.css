@@ -1,0 +1,153 @@
+.navbar {
+    background-image: url(../images/week3-4/banner.png);/*bgi*/
+    background-size: cover;/*圖片長寬 bgsz:cv*/
+    background-position: center;/*垂直置中*/
+    background-repeat: no-repeat;/*圖片不重覆*/
+    padding-top: 289px;
+    padding-bottom: 289px;
+    
+}
+
+.text-center.text-center {
+    text-align: center;/*ta:c*/
+}
+
+.barbox {
+    padding-left: 200px;
+}
+
+.bar-text {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn-Primary{
+	background: var(--primary-300);
+    width: 115px;
+}
+
+.main-h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Badge-Small {
+    background-color: var(--primary-100);
+    color: var(--primary-400);
+    padding: 8px 12px;
+    padding-right: -12px;
+}
+
+.position-relative {
+    position:relative;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 0px;
+
+}
+
+.section-sale {
+    background-image: url(../images/week3-4/banner-co-branded.png);
+    background-size: cover;
+    background-position: center;/*垂直置中*/
+    background-repeat: no-repeat;/*圖片不重覆*/
+    padding-top: 100px;
+}
+
+.h5-lh-150 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.mb-84 {
+    margin-bottom: 84px;
+}
+
+.nav-link {
+    color: var(--neutral-400);
+}
+
+.nav-item {
+    background-color:var(--Neutral-600);
+}
+
+.btn-page {
+	border: none;/*bdn*/
+	background-color: var(--neutral-400);
+	border-radius: 99em;/*bdrs*/
+	padding: 4px 4px;/*p*/
+	cursor: pointer;/*cur:p變手指*/
+}
+
+.btn-page-hover {
+    border: none;/*bdn*/
+    background-color:var(--neutral-600);
+    border-radius: 99em;/*bdrs*/
+    padding: 4px 12px;/*p*/
+    cursor: pointer;/*cur:p*/
+    
+}
+
+.btn-page:active,
+.btn-page:hover {
+    background-color:var(--neutral-600);
+    padding: 4px 12px;/*p*/
+}
+
+.card-relative {
+    position:relative;
+}
+
+.card-relative::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* 黑色半透明遮罩 */
+}
+
+.card-absolute {
+    position: absolute;
+    white-space: nowrap; /*不換行*/
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-relative:hover::before {
+  background-color: rgba(0, 0, 0, 0.1); /* 滑鼠移上時變淺 */
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap:8px;
+    grid-column-gap:8px;
+}
+
+.p-4 {
+    padding: 4px;
+}
+
+.card-grid-m {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+.card-grid-s {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:4;
+    
+}

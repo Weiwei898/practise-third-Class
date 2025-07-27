@@ -30,7 +30,7 @@
     width: 160px;
 }
 
-.btn-wrapper.active,
+.btn-wrapper:active,
 .btn-wrapper:hover {
     border: 1px solid var(--neutral-900);
 }
