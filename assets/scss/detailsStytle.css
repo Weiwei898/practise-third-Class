@@ -39,6 +39,10 @@
     width: 259px;
 }
 
+.btn-disabled {
+    cursor: default
+}
+
 /*商品說明*/
 .text-fw {
 	font-weight: 500;
