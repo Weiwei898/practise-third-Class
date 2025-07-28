@@ -22,6 +22,13 @@
     text-align: center;
     color: var(--neutral-600);
     font-weight: 500;
+    border: none;/*bdn*/
+	background-color: transparent;/*bgc:t 透明*/
+    cursor: pointer;/*cur:p*/
+}
+
+.product-stytle:hover {
+    color: var(--neutral-900);
 }
 
 /*商品尺吋*/
@@ -39,8 +46,14 @@
     width: 259px;
 }
 
-.btn-disabled {
-    cursor: default
+.btn-900 {
+    border: 1px solid var(--neutral-900);
+
+}
+
+.btn-900:hover {
+    border: 1px solid var(--neutral-700);
+    color: var(--neutral-700);
 }
 
 /*商品說明*/
@@ -50,4 +63,9 @@
 
 .border-bottom {
 	border-bottom: 1px solid var(--neutral-300);/*bdt+*/
+}
+
+i {
+    width: 20px;
+    height: 20px;
 }

@@ -430,6 +430,7 @@ a {
 
 /*Button*/
 .btn {
+	font-family: "Noto Sans TC", sans-serif;/*ff 改變全部字型符合設計稿*/
 	font-size: 16px;/*fz*/
 	font-weight: 500;/*fw*/
 	line-height: 1.5;/*lh*/
@@ -472,6 +473,15 @@ a {
 .btn-bark{
 	background: var(--neutral-900);
 	color: var(--neutral-0);
+}
+
+.btn-bark:hover {
+	background: var(--neutral-700);
+}
+
+.btn-disabled {
+    cursor: default;
+	pointer-events: none;/*防止滑鼠事件（如 click / hover）*/
 }
 
 .Copyright {

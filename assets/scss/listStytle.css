@@ -8,7 +8,13 @@
     font-weight: 400;
 }
 
-.page-item:active {
+.page-item:active,
+.page-item:hover {
     background-color:var(--primary-300);
     font-weight: 500;
+}
+
+.page-item-disabled {
+    cursor: default;
+	pointer-events: none;/*防止滑鼠事件（如 click / hover）*/
 }
