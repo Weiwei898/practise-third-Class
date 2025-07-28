@@ -50,6 +50,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*css變數進行網站主色設定*/
 :root {
 	--primary-100:#F5FEE7;
@@ -90,7 +91,7 @@ img {
 	/*img預設為行內元素，會受到基準線對齊的影響*/
     /*display: block;變成區塊元素可解決；調整基線對齊的方式，副作用比較少*/
     vertical-align: middle;/*控制 行內元素（inline 或 inline-block 元素） middle為中間對齊 va:m*/
-	max-width: 100%;
+	max-width: 100%;/*RwD要這樣設定->max*/
 	height: auto;
 }
 
@@ -103,7 +104,7 @@ a {
  
 /*通用樣式*/
 .container{
-	width: 1296px;
+	max-width: 1296px;/*RwD要這樣設定->max*/
 	margin: 0 auto;
 }
 
