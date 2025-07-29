@@ -159,3 +159,57 @@
     grid-row-end:4;
     
 }
+
+@media (max-width:767px) {
+    .d-n {
+        display: none;
+    }
+
+    .navbar {
+        padding-top: 155px;
+        padding-bottom: 155px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .barbox {
+        padding-left: 0px;
+    }
+
+    .bar-text-md {
+        font-size: 48px;
+    }
+
+    /*熱銷補貨項目滑動效果*/
+    .horizontal-scroll {
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; /* 手機滑動更順 */
+    }
+    .horizontal-scroll > .col-md-4 {
+        display: inline-block;
+        width: 70%; /* 或更小的比例依你設計調整 */
+    }
+
+
+}
+
+@media (max-width:576px) {
+    .d-n {
+        display: none;
+    }
+
+    .navbar {
+        padding-top: 155px;
+        padding-bottom: 155px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .barbox {
+    padding-left: 0px;
+    }
+
+    .bar-text-md {
+    font-size: 48px;
+    }
+}

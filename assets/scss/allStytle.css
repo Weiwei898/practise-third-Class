@@ -104,9 +104,12 @@ a {
  
 /*通用樣式*/
 .container{
-	max-width: 1296px;/*RwD要這樣設定->max*/
+	max-width: 1320px;/*RwD要這樣設定->max 因為盒模型左右加了12px所以width要加24px撐開*/
+	padding-left: 12px;/*RWD留邊*/
+	padding-right: 12px;/*RWD留邊*/
 	margin: 0 auto;
 }
+
 
 .row {/*父層排列樣式，因為欄位有推12px，所以要減12px)*/
 	display: flex;
@@ -187,6 +190,37 @@ a {
 	width: 100%;/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
+@media (max-width:767px){/*裝置小於767套用*/
+	.row {/*父層排列樣式，因為欄位有推12px，所以要減12px)*/
+		margin-right: -6px;
+		margin-left: -6px;
+	}
+
+	.col-md-1 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: calc(100% / 4 * 1);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+	}
+
+	.col-md-2 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: calc(100% / 4 * 2);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+	}
+
+	.col-md-3 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: calc(100% / 4 * 3);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+	}
+
+	.col-md-4 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: 100%;
+	}
+}
+
 .h1 {
 	font-size: 40px;
 	font-weight: 700;
@@ -221,6 +255,47 @@ a {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.2;
+}
+
+@media (max-width:767px){/*裝置小於767套用*/
+
+	.main-md-h1.main-md-h1 {
+		font-size: 32px;
+	}
+
+	.h3-md {
+		font-size: 28px;
+	}
+	.h4-md {
+		font-size: 24px;
+	}
+	.h5-md {
+		font-size: 20px;
+	}
+	.h6-md {
+		font-size: 16px;
+	}
+	.text-md {
+		font-size: 14px;
+	}
+}
+
+@media (max-width:576px){/*裝置小於576套用*/
+	.h3-sm {
+		font-size: 28px;
+	}
+	.h4-sm {
+		font-size: 24px;
+	}
+	.h5-sm {
+		font-size: 20px;
+	}
+	.h6-sm {
+		font-size: 16px;
+	}
+	.text-sm {
+		font-size: 14px;
+	}
 }
 
 .text-sm {
@@ -396,6 +471,109 @@ a {
 	margin-right: 48px;
 }
 
+@media (max-width:767px){/*裝置小於767套用*/
+	.py-12-md {
+		padding: 12px 0;
+	}
+
+	.pb-8-md {
+		padding-bottom: 8px;
+	}
+	
+	.pb-16-md {
+		padding-bottom: 16px;
+	}
+
+	.pb-24-md {
+		padding-bottom: 24px;
+	}
+
+	.pb-32-md {
+		padding-bottom: 32px;
+	}
+
+	.pb-40-md {
+		padding-bottom: 40px;
+	}
+
+	.mb-8-md {
+		margin-bottom: 8px;
+	}
+
+	.mb-16-md {
+		margin-bottom: 16px;
+	}
+
+	.mb-24-md {
+		margin-bottom: 24px;
+	}
+
+	.mb-32-md {
+		margin-bottom: 32px;
+	}
+
+	.mb-40-md {
+		margin-bottom: 40px;
+	}
+
+	.my-64-md {
+		margin: 64px 0;
+	}
+
+}
+
+@media (max-width:576px){/*裝置小於767套用*/
+	.py-12-sm {
+		padding: 12px 0;
+	}
+
+	.pb-8-sm {
+		padding-bottom: 8px;
+	}
+	
+	.pb-16-sm {
+		padding-bottom: 16px;
+	}
+
+	.pb-24-sm {
+		padding-bottom: 24px;
+	}
+
+	.pb-32-sm {
+		padding-bottom: 32px;
+	}
+
+	.pb-40-sm {
+		padding-bottom: 40px;
+	}
+
+	.mb-8-sm {
+		margin-bottom: 8px;
+	}
+
+	.mb-16-sm {
+		margin-bottom: 16px;
+	}
+
+	.mb-24-sm {
+		margin-bottom: 24px;
+	}
+
+	.mb-32-sm {
+		margin-bottom: 32px;
+	}
+
+	.mb-40-sm {
+		margin-bottom: 40px;
+	}
+
+	.my-64-sm {
+		margin: 64px 0;
+	}
+
+}
+
+
 /*display: flex*/
 .d-f {
     display: flex; 
@@ -426,7 +604,15 @@ a {
 	flex-direction: column;/*垂直*/
 }
 
+@media (max-width:767px){/*裝置小於767套用*/
+	.fxd-c-md {
+		flex-direction: column;/*垂直*/
+	}
 
+	.d-md-block {
+		display: block;
+	}
+}
 
 /*Button*/
 .btn {
