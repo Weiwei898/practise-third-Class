@@ -153,6 +153,28 @@
     grid-row-end:4;
     
 }
+/*解決842px左右字體"依系列選購"破版問題*/
+@media (max-width:992px) {
+    .main-md-h1.main-md-h1 {
+		font-size: 32px;
+	}
+
+	.h3-md {
+		font-size: 28px;
+	}
+	.h4-md {
+		font-size: 24px;
+	}
+	.h5-md {
+		font-size: 20px;
+	}
+	.h6-md.h6-md {
+		font-size: 16px;
+	}
+	.text-md {
+		font-size: 14px;
+	}
+}
 
 @media (max-width:767px) {
     .d-f-md {
