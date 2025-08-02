@@ -10,11 +10,15 @@
   <body>
     
   <%- include("./layout/nav") %>
-
+  
+  <nav class="d-n w-100 d-f-md">
+          <a class="flex-fill text-cente" href="#"><button class="btn btn-primary-200 w-100">商品列表</button></a>
+          <a class="flex-fill text-cente" href="#"><button class="btn btn-primary-100 w-100">品牌故事</button></a>
+  </nav>
   <nav class="navbar mb-64 mb-40-md">
     <div class="barbox">
-      <h1 class="bar-text text-neutral-0 pb-16 bar-text-md">URBNSTEP</h1>
-      <p class="h3 text-neutral-0 pb-48 h5-md">Your Step, Your Statement</p>
+      <h1 class="bar-text text-neutral-0 pb-16 bar-text-md pb-8-sm">URBNSTEP</h1>
+      <p class="h3 text-neutral-0 pb-48 h5-md pb-32-sm">Your Step, Your Statement</p>
       <div>
         <a href="list.html" 
         title="URBNSTEP商品列表" 
@@ -29,130 +33,129 @@
       <div class="text-center">
           <h2 class="main-h1 pb-12 main-md-h1 pb-8-md">New Arrival</h1>
           <h3 class="h2 mb-32 h4-md mb-24-md">新品上市</h3>
-        </div>
+      </div>
       <div class="row">
           <!--新品品項-->
-        <div class="d-f flex-wrap">
-          <div class="col-6 col-md-2">
+        <ul class="d-f flex-wrap">
+          <li class="col-6 col-md-2">
             <div class="mb-40 mb-24-md">
               <a href="#">
                 <img src="../assets/images/week3-4/new-1.png" 
                 alt="new-1" 
-                class="mb-12">
-                <h2 class="h6 mb-4">Monoverse</h2>
+                class="mb-12 mb-8-sm mb-8-sm">
+                <h2 class="h6 mb-4 mb-0-sm mb-0-sm">Monoverse</h2>
                 <p>NT$3,600</p>
               </a>
             </div>
-          </div>
-          <div class="col-6 col-md-2">
+          </li>
+          <li class="col-6 col-md-2">
             <div class="mb-40 mb-24-md">
               <a href="#">
                 <img src="../assets/images/week3-4/new-2.png" 
                 alt="new-2" 
-                class="mb-12">
-                <h2 class="h6 mb-4">PLATFORM 404</h2>
+                class="mb-12 mb-8-sm">
+                <h2 class="h6 mb-4 mb-0-sm">PLATFORM 404</h2>
                 <p>NT$2,600</p>
               </a>
             </div>
-          </div>
-          <div class="col-6 col-md-2">
-            <div>
-              <a href="#">
-                <img src="../assets/images/week3-4/new-3.png" 
-                alt="new-3" 
-                class="mb-12">
-                <h2 class="h6 mb-4">URBN Force</h2>
-                <p>NT$3,200</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-md-2">
-            <div>
-              <a href="#">
-                <img src="../assets/images/week3-4/new-4.png" 
-                alt="new-4" 
-                class="mb-12">
-                <h2 class="h6 mb-4">Mode90</h2>
-                <p>NT$4,000</p>
-              </a>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="col-6 col-md-2">
+            <a href="#">
+              <img src="../assets/images/week3-4/new-3.png" 
+              alt="new-3" 
+              class="mb-12 mb-8-sm">
+              <h2 class="h6 mb-4 mb-0-sm">URBN Force</h2>
+              <p>NT$3,200</p>
+            </a>
+          </li>
+          <li class="col-6 col-md-2">
+            <a href="#">
+              <img src="../assets/images/week3-4/new-4.png" 
+              alt="new-4" 
+              class="mb-12 mb-8-sm">
+              <h2 class="h6 mb-4 mb-0-sm">Mode90</h2>
+              <p>NT$4,000</p>
+            </a>
+          </li>
+        </ul>
       </div>   
     </div>
     <!--熱銷補貨-->
-    <div class="pb-64 mb-48">
+    <div class="pb-64 mb-48 pb-40-md mb-24-md">
       <h3 class="h2 mb-16">熱銷補貨</h3>
-      <div class="row horizontal-scroll d-md-block overflow-auto"> 
-        <div class="col-3 position-relative col-md-4 flex-shrink-0">
-          <div class="">
-            <a href="#">
-              <img src="../assets/images/product-3.png" 
-              alt="product-3" 
-              class="">
-            </a>
+      <div class="row scroll-x-md row-md-scroll"> 
+          <div class="col-3 col-md-scroll position-relative">
+            <div class="">
+              <a href="#">
+                <img src="../assets/images/product-3.png" 
+                alt="product-3" 
+                class="">
+              </a>
+            </div>
+            <div class="position-absolute">
+              <p class="Badge-Small text-sm">人氣 No.1</p>
+            </div>
           </div>
-          <div class="position-absolute">
-            <p class="Badge-Small text-sm">人氣 No.1</p>
+          <div class="col-3 col-md-scroll position-relative">
+            <div class="">
+              <a href="#">
+                <img src="../assets/images/product.png" 
+                alt="product" 
+                class="">
+              </a>
+            </div>
+            <div class="position-absolute">
+              <p class="Badge-Small text-sm">人氣 No.1</p>
+            </div>
           </div>
-        </div>
-        <div class="col-3 position-relative col-md-4 flex-shrink-0">
-          <div class="">
-            <a href="#">
-              <img src="../assets/images/product.png" 
-              alt="product" 
-              class="">
-            </a>
+          <div class="col-3 col-md-scroll position-relative">
+            <div class="">
+              <a href="#">
+                <img src="../assets/images/product-6.png" 
+                alt="product-6" 
+                class="">
+              </a>
+            </div>
+            <div class="position-absolute">
+              <p class="Badge-Small text-sm">人氣 No.1</p>
+            </div>
           </div>
-          <div class="position-absolute">
-            <p class="Badge-Small text-sm">人氣 No.1</p>
+          <div class="col-3 col-md-scroll position-relative">
+            <div class="">
+              <a href="#">
+                <img src="../assets/images/product-4.png" 
+                alt="product-4" 
+                class="">
+              </a>
+            </div>
+            <div class="position-absolute">
+              <p class="Badge-Small text-sm">人氣 No.1</p>
+            </div>
           </div>
-        </div>
-        <div class="col-3 position-relative col-md-4 flex-shrink-0">
-          <div class="">
-            <a href="#">
-              <img src="../assets/images/product-6.png" 
-              alt="product-6" 
-              class="">
-            </a>
-          </div>
-          <div class="position-absolute">
-            <p class="Badge-Small text-sm">人氣 No.1</p>
-          </div>
-        </div>
-        <div class="col-3 position-relative col-md-4 flex-shrink-0">
-          <div class="">
-            <a href="#">
-              <img src="../assets/images/product-4.png" 
-              alt="product-4" 
-              class="">
-            </a>
-          </div>
-          <div class="position-absolute">
-            <p class="Badge-Small text-sm">人氣 No.1</p>
-          </div>
-        </div>
       </div>
     </div>
    </main>
   <!--section-sale-->
-  <section class="mb-64 pb-48">
-    <div class="section-sale text-center">
-      <div class="d-f pb-16 justify-center">
-        <h2 class="main-h1 text-neutral-0 me-24">URBNSTEP</h2>
-        <p class="h1 text-primary-300 me-24">x</p>
-        <h2 class="main-h1 text-neutral-0">Kevin Chen</h2>
+  <section class="mb-64 pb-48 mb-40-md pb-24-md">
+    <div class="section-sale text-center section-sale-md">
+      <div class="d-f pb-16 justify-center fxd-c-md pb-0-md">
+        <h2 class="main-h1 text-neutral-0 me-24 me-0-md main-md-h1">URBNSTEP</h2>
+        <p class="h1 text-primary-300 me-24 me-0-md h3-md">x</p>
+        <h2 class="main-h1 text-neutral-0 mb-16-md main-md-h1">Kevin Chen</h2>
       </div>
-        <h3 class="h2 text-neutral-0 mb-32">跨界聯名，限量發售</h3>
-        <p class="h5-lh-150 text-neutral-500 mb-48">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
-        <div class="mb-84">
+        <h3 class="h2 text-neutral-0 mb-32 mb-24-sm h5-md">跨界聯名，限量發售</h3>
+        <p class="h5-lh-150 text-neutral-500 mb-48 d-n-md">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
+        <!--RWD用-->
+        <p class="h5-lh-150 text-neutral-500 mb-48 mb-0-md h6-md d-n d-f-md justify-center-md h6-sm mb-4-sm">新銳漫畫家 Kevin Chen 親自操刀設計</p>
+        <p class="h5-lh-150 text-neutral-500 mb-48 mb-32-md h6-md d-n d-f-md justify-center-md h6-sm">街頭能量全面引爆！</p>
+        <div class="mb-84 mb-0-md mb-0-sm">
           <a href="list.html" 
           title="URBNSTEP商品列表" 
           alt="URBNSTEP商品列表">
           <button class="btn btn-Primary">立即搶購</button></a>
         </div>
         <!--section裡未設定的輪播功能-->
-        <ul class="d-f justify-center pb-8 ">
+        <ul class="d-f justify-center pb-8 d-n-md">
           <li class="me-8">
             <a class="" aria-current="page" href="#"><button class="btn-page-hover"></button></a>
           </li>
@@ -173,42 +176,42 @@
   </section>
   <!--依系列選購-->
   <section class="container">
-    <div class="pb-64 mb-64">
+    <div class="pb-64 mb-64 pb-40-md mb-40-md">
       <h3 class="h2 mb-16">依系列選購</h3>
-      <div class="row"> 
-        <div class="col-3"> 
+      <div class="row flex-wrap"> 
+        <div class="col-3 col-md-2 col-sm-2 mb-12-md"> 
           <a href="#" class="card-relative text-center">
             <img src="../assets/images/product-6.png" alt="product-6">
               <div class="card-absolute">
-                <p class="h3 text-neutral-0 mb-8 text-color">URBN RUNNER</p>
-                <p class="h4 text-neutral-0">慢跑系列</p>
+                <p class="h3 text-neutral-0 mb-8 text-color h6-sm">URBN RUNNER</p>
+                <p class="h4 text-neutral-0 h6-sm">慢跑系列</p>
               </div>
           </a>
         </div>
-        <div class="col-3"> 
+        <div class="col-3 col-md-2 col-sm-2 mb-12-md"> 
           <a href="#" class="card-relative text-center img-opacity">
             <img src="../assets/images/week3-4/product-11.png" alt="product-11">
               <div class="card-absolute">
-                <p class="h3 text-neutral-0 mb-8 text-color">URBN RUNNER</p>
-                <p class="h4 text-neutral-0">慢跑系列</p>
+                <p class="h3 text-neutral-0 mb-8 text-color h6-sm">STREETMODE</p>
+                <p class="h4 text-neutral-0 h6-sm">滑板系列</p>
               </div>
           </a>
         </div>
-        <div class="col-3"> 
+        <div class="col-3 col-md-2 col-sm-2"> 
           <a href="#" class="card-relative text-center">
             <img src="../assets/images/product-9.png" alt="product-9">
               <div class="card-absolute">
-                <p class="h3 text-neutral-0 mb-8 text-color">URBN RUNNER</p>
-                <p class="h4 text-neutral-0">慢跑系列</p>
+                <p class="h3 text-neutral-0 mb-8 text-color h6-sm">CHUNK DISTRICT</p>
+                <p class="h4 text-neutral-0 h6-sm">厚底系列</p>
               </div>
           </a>
         </div>
-        <div class="col-3"> 
+        <div class="col-3 col-md-2 col-sm-2"> 
           <a href="#" class="card-relative text-center">
             <img src="../assets/images/week3-4/product-10.png" alt="product-10" >
               <div class="card-absolute">
-                <p class="h3 text-neutral-0 mb-8 text-color">URBN RUNNER</p>
-                <p class="h4 text-neutral-0">慢跑系列</p>
+                <p class="h3 text-neutral-0 mb-8 text-color h6-sm">COLLAB ZONE</p>
+                <p class="h4 text-neutral-0 h6-sm">聯名企劃</p>
               </div>
           </a>
         </div>
@@ -217,21 +220,21 @@
   </section>
   <!--穿搭靈感-->
   <section class="container">
-    <div class="pb-64 mb-48">
+    <div class="pb-64 mb-48 pb-40-md mb-24-md">
       <h3 class="h2 mb-16">穿搭靈感</h3>
-      <ul class="card-grid"> 
-        <li><img src="../assets/images/week3-4/inspiration-1.png" alt="inspiration-1"></li>
-        <li><img src="../assets/images/week3-4/inspiration-2.png" alt="inspiration-2"></li>
-        <li class="card-grid-s"><img src="../assets/images/week3-4/inspiration-3.png" alt="inspiration-3"></li>
-        <li><img src="../assets/images/week3-4/inspiration-4.png" alt="inspiration-4"></li>
-        <li><img src="../assets/images/week3-4/inspiration-5.png" alt="inspiration-5"></li>
-        <li><img src="../assets/images/week3-4/inspiration-6.png" alt="inspiration-6"></li>
-        <li><img src="../assets/images/week3-4/inspiration-7.png" alt="inspiration-7"></li>
-        <li><img src="../assets/images/week3-4/inspiration-8.png" alt="inspiration-8"></li>
-        <li><img src="../assets/images/week3-4/inspiration-9.png" alt="inspiration-9"></li>
-        <li class="card-grid-m"><img src="../assets/images/week3-4/inspiration-10.png" alt="inspiration-10"></li>
-        <li ><img src="../assets/images/week3-4/inspiration-11.png" alt="inspiration-11"></li>
-        <li><img src="../assets/images/week3-4/inspiration-12.png" alt="inspiration-112"></li>
+      <ul class="card-grid row scroll-x-md row-md-scroll"> 
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-1.png" alt="inspiration-1"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-2.png" alt="inspiration-2"></li>
+        <li class="card-grid-s col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-3.png" alt="inspiration-3"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-4.png" alt="inspiration-4"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-5.png" alt="inspiration-5"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-6.png" alt="inspiration-6"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-7.png" alt="inspiration-7"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-8.png" alt="inspiration-8"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-9.png" alt="inspiration-9"></li>
+        <li class="card-grid-m col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-10.png" alt="inspiration-10"></li>
+        <li class="col-md-scroll position-relative" ><img src="../assets/images/week3-4/inspiration-11.png" alt="inspiration-11"></li>
+        <li class="col-md-scroll position-relative"><img src="../assets/images/week3-4/inspiration-12.png" alt="inspiration-112"></li>
     </ul>
   </section>
   

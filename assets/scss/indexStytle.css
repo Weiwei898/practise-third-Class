@@ -31,12 +31,6 @@
     color: var(--primary-500);
 }
 
-.main-h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
 .Badge-Small {
     background-color: var(--primary-100);
     color: var(--primary-400);
@@ -161,8 +155,16 @@
 }
 
 @media (max-width:767px) {
-    .d-n {
+    .d-f-md {
+        display: flex;
+    }
+
+    .d-n-md {
         display: none;
+    }
+
+    .justify-center-md {
+	    justify-content: center;/*主軸置中 jc:c*/
     }
 
     .navbar {
@@ -180,22 +182,62 @@
         font-size: 48px;
     }
 
+    .section-sale-md{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
     /*熱銷補貨項目滑動效果*/
-    .horizontal-scroll {
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch; /* 手機滑動更順 */
-    }
-    .horizontal-scroll > .col-md-4 {
-        display: inline-block;
-        width: 70%; /* 或更小的比例依你設計調整 */
+    .row-md-scroll {
+        margin-right: -8px;
+        margin-left: -8px;
     }
 
+    .col-md-scroll {
+        min-width: 316px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 
+    .scroll-x-md {
+        flex-wrap: nowrap;     /* 等同 flex-nowrap */
+        overflow-x: auto;      /* 水平可滾動 */
+        white-space: nowrap;   /* 水平排列內容不換行（適用於 inline-block 或 text） */
+    }
+
+    .card-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap:0px;
+    grid-column-gap:0px;
+    }
+
+    .card-grid-m {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    }
+
+    .card-grid-s {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    
+    }
 }
 
 @media (max-width:576px) {
-    .d-n {
+    .d-f-sm {
+        display: flex;
+    }
+
+    .d-n-sm {
         display: none;
+    }
+
+    .justify-center-sm {
+	    justify-content: center;/*主軸置中 jc:c*/
     }
 
     .navbar {
@@ -206,10 +248,15 @@
     }
 
     .barbox {
-    padding-left: 0px;
+        padding-left: 0px;
     }
 
-    .bar-text-md {
+    .bar-text-sm {
     font-size: 48px;
+    }
+
+    .section-sale-sm{
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 }

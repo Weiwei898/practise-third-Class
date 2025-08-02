@@ -1,6 +1,5 @@
 /*引入字體*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-
 /*css reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -190,6 +189,10 @@ a {
 	width: 100%;/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
 }
 
+.w-100 {
+	width: 100%;
+}
+
 @media (max-width:767px){/*裝置小於767套用*/
 	.row {/*父層排列樣式，因為欄位有推12px，所以要減12px)*/
 		margin-right: -6px;
@@ -219,6 +222,12 @@ a {
 		padding-left: 6px;
 		width: 100%;
 	}
+}
+
+.main-h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .h1 {
@@ -281,6 +290,11 @@ a {
 }
 
 @media (max-width:576px){/*裝置小於576套用*/
+
+	.main-sm-h1.main-sm-h1 {
+		font-size: 32px;
+	}
+
 	.h3-sm {
 		font-size: 28px;
 	}
@@ -290,7 +304,7 @@ a {
 	.h5-sm {
 		font-size: 20px;
 	}
-	.h6-sm {
+	.h6-sm.h6-sm {
 		font-size: 16px;
 	}
 	.text-sm {
@@ -472,8 +486,16 @@ a {
 }
 
 @media (max-width:767px){/*裝置小於767套用*/
+	.py-0-md {
+		padding: 0px 0;
+	}
+
 	.py-12-md {
 		padding: 12px 0;
+	}
+
+	.pb-0-md {
+		padding-bottom: 0px;
 	}
 
 	.pb-8-md {
@@ -496,8 +518,16 @@ a {
 		padding-bottom: 40px;
 	}
 
+	.mb-0-md {
+		margin-bottom: 0px;
+	}
+
 	.mb-8-md {
 		margin-bottom: 8px;
+	}
+
+	.mb-12-md {
+		margin-bottom: 12px;
 	}
 
 	.mb-16-md {
@@ -520,11 +550,46 @@ a {
 		margin: 64px 0;
 	}
 
+	.me-0-md {
+		margin-right: 0px;
+	}
+
+	.me-8-md  {
+		margin-right: 8px;
+	}
+
+	.me-12-md  {
+		margin-right: 12px;
+	}
+
+	.me-24-md  {
+		margin-right: 24px;
+	}
+
+	.me-40-md  {
+		margin-right: 40px;
+	}
+
+	.me-48-md  {
+		margin-right: 48px;
+	}
 }
 
-@media (max-width:576px){/*裝置小於767套用*/
+@media (max-width:576px){/*裝置小於576套用*/
+	.ms-12-sm {
+		margin-left: 12px;
+	}
+
+	.py-0-sm {
+		padding: 0px 0;
+	}
+
 	.py-12-sm {
 		padding: 12px 0;
+	}
+
+	.pb-0-sm {
+		padding-bottom: 0px;
 	}
 
 	.pb-8-sm {
@@ -547,8 +612,20 @@ a {
 		padding-bottom: 40px;
 	}
 
+	.mb-0-sm.mb-0-sm {
+		margin-bottom: 0px;
+	}
+
+	.mb-4-sm {
+		margin-bottom: 4px;
+	}
+
 	.mb-8-sm {
 		margin-bottom: 8px;
+	}
+
+	.mb-12-sm {
+		margin-bottom: 12px;
 	}
 
 	.mb-16-sm {
@@ -571,12 +648,43 @@ a {
 		margin: 64px 0;
 	}
 
+	.me-0-sm {
+		margin-right: 0px;
+	}
+
+	.me-8-sm  {
+		margin-right: 8px;
+	}
+
+	.me-12-sm  {
+		margin-right: 12px;
+	}
+
+	.me-16-sm  {
+		margin-right: 16px;
+	}
+
+	.me-24-sm  {
+		margin-right: 24px;
+	}
+
+	.me-40-sm  {
+		margin-right: 40px;
+	}
+
+	.me-48-sm  {
+		margin-right: 48px;
+	}
 }
 
 
 /*display: flex*/
 .d-f {
     display: flex; 
+}
+
+.d-n {
+	display: none;
 }
 
 .justify-between {
@@ -592,7 +700,7 @@ a {
 }
 
 .align-end {
-	align-items:flex-end;/*交錯軸置中 aife*/
+	align-items:flex-end;/*交錯軸end aife*/
 }
 
 .flex-wrap {
@@ -604,13 +712,48 @@ a {
 	flex-direction: column;/*垂直*/
 }
 
+.text-center {
+	text-align: center;
+}
+
+.flex-fill {
+	flex: 1 1 auto;/*自動填滿空間*/
+}
+
 @media (max-width:767px){/*裝置小於767套用*/
 	.fxd-c-md {
 		flex-direction: column;/*垂直*/
 	}
 
-	.d-md-block {
+	.d-b-md {
 		display: block;
+	}
+
+	.d-f-md {
+		display: flex;
+	}
+
+}
+
+@media (max-width:375px){/*裝置小於767套用*/
+	.fxd-c-sm {
+		flex-direction: column;/*垂直*/
+	}
+
+	.d-b-sm {
+		display: block;
+	}
+
+	.d-f-sm {
+		display: flex;
+	}
+
+	.justify-star-sm {
+		justify-content: start;/*主軸start jc:s*/
+	}
+	
+	.align-start-sm {
+		align-items: flex-start;/*交錯軸start aife*/
 	}
 }
 
@@ -668,6 +811,14 @@ a {
 .btn-disabled {
     cursor: default;
 	pointer-events: none;/*防止滑鼠事件（如 click / hover）*/
+}
+
+.btn-primary-200 {
+	background: var(--primary-200);
+}
+
+.btn-primary-100 {
+	background: var(--primary-100);
 }
 
 .Copyright {
