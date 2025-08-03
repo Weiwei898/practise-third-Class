@@ -303,7 +303,7 @@ a {
 	}
 }
 
-@media (max-width:576px){/*裝置小於576套用*/
+@media (max-width:375px){/*裝置小於375套用*/
 
 	.main-sm-h1.main-sm-h1 {
 		font-size: 32px;
@@ -504,8 +504,8 @@ a {
 		padding: 0px 0;
 	}
 
-	.py-12-md {
-		padding: 12px 0;
+	.py-16-md {
+		padding: 16px 0;
 	}
 
 	.pb-0-md {
@@ -536,7 +536,7 @@ a {
 		margin-bottom: 0px;
 	}
 
-	.mb-8-md {
+	.mb-8-md{
 		margin-bottom: 8px;
 	}
 
@@ -589,7 +589,7 @@ a {
 	}
 }
 
-@media (max-width:576px){/*裝置小於576套用*/
+@media (max-width:375px){/*裝置小於375套用*/
 	.ms-12-sm {
 		margin-left: 12px;
 	}
@@ -598,8 +598,8 @@ a {
 		padding: 0px 0;
 	}
 
-	.py-12-sm {
-		padding: 12px 0;
+	.py-16-sm {
+		padding: 16px 0;
 	}
 
 	.pb-0-sm {
@@ -747,9 +747,19 @@ a {
 		display: flex;
 	}
 
+	.d-n-md {
+        display: none;
+    }
+
+	.justify-center-md {
+	    justify-content: center;/*主軸置中 jc:c*/
+    }
+
+	
+
 }
 
-@media (max-width:375px){/*裝置小於767套用*/
+@media (max-width:375px){/*裝置小於375套用*/
 	.fxd-c-sm {
 		flex-direction: column;/*垂直*/
 	}
@@ -762,6 +772,10 @@ a {
 		display: flex;
 	}
 
+	.d-n-sm {
+        display: none;
+    }
+
 	.justify-star-sm {
 		justify-content: start;/*主軸start jc:s*/
 	}
@@ -769,6 +783,10 @@ a {
 	.align-start-sm {
 		align-items: flex-start;/*交錯軸start aife*/
 	}
+
+	.justify-center-sm {
+	    justify-content: center;/*主軸置中 jc:c*/
+    }
 }
 
 /*Button*/
