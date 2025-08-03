@@ -280,6 +280,8 @@ a {
 	line-height: 1.2;
 }
 
+
+
 @media (max-width:767px){/*裝置小於767套用*/
 
 	.main-md-h1.main-md-h1 {
@@ -431,6 +433,10 @@ a {
 	padding-bottom: 64px;
 }
 
+.pe-4 {
+	padding-right: 4px;
+}
+
 .pe-8 {
 	padding-right: 8px;
 }
@@ -499,7 +505,15 @@ a {
 	margin-right: 48px;
 }
 
+.gap-8 {
+	gap: 8px;
+}
+
 @media (max-width:767px){/*裝置小於767套用*/
+	.p-24-md {
+		padding: 24px;
+	}
+
 	.py-0-md {
 		padding: 0px 0;
 	}
@@ -508,12 +522,20 @@ a {
 		padding: 16px 0;
 	}
 
+	.py-40-md {
+		padding: 40px 0;
+	}
+
 	.pb-0-md {
 		padding-bottom: 0px;
 	}
 
 	.pb-8-md {
 		padding-bottom: 8px;
+	}
+
+	.pb-12-md {
+		padding-bottom: 12px;
 	}
 	
 	.pb-16-md {
@@ -755,7 +777,13 @@ a {
 	    justify-content: center;/*主軸置中 jc:c*/
     }
 
-	
+	.justify-start-md {
+		justify-content: start;
+	}
+
+	.text-start-md {
+	text-align: start;
+	}
 
 }
 
@@ -820,6 +848,13 @@ a {
 	padding: 0 12px;
 	color: var(--neutral-300);
 	font-weight: 700;
+}
+
+@media (max-width:375px){/*裝置小於375套用*/
+	.breadcrumb-item + .breadcrumb-item::before {
+		padding: 0 0px;
+	}
+
 }
 
 .breadcrumb-item {

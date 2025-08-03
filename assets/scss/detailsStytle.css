@@ -1,12 +1,32 @@
+/*助教版產品圖*/
 .product-row {
-    margin: 0 -4px;
+    margin-right: -4px;
+    margin-left: -4px;
     display: flex;
     flex-wrap: wrap;/*fxw:w*/
 }
 
 .product-col {
     width: calc(100% / 12 * 6);
-    padding: 0 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+@media (max-width:992px) {
+    .btn-lg {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+
+@media (max-width:767px){
+    .product-col-scroll {
+        min-width: 375px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
 }
 
 .text-stytle {
@@ -21,10 +41,6 @@
     width: 64px;
     text-align: center;
     color: var(--neutral-600);
-    font-weight: 500;
-    border: none;/*bdn*/
-	background-color: transparent;/*bgc:t 透明*/
-    cursor: pointer;/*cur:p*/
 }
 
 .product-stytle:hover {
@@ -42,8 +58,23 @@
     border: 1px solid var(--neutral-900);
 }
 
+.btn-a-size {
+    width: 50%;
+}
+
 .btn-size {
-    width: 259px;
+    width: 100%;
+}
+
+@media (max-width:767px){
+    .a-heart-md{
+        order: 1;
+        width: 16%;
+    }
+
+    .a-handbag-md{
+        width: 84%;
+    }
 }
 
 .btn-900 {

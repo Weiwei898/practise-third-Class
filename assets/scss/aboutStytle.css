@@ -8,6 +8,16 @@
 	padding-bottom: 151px;
 }
 
+@media (max-width:767px){
+
+
+	.header-md {
+		padding-top: 87px;
+		padding-bottom: 87px;
+		background-image: url('../images/week3-4/hero-sm.png');
+	}
+}
+
 .article {
 	text-align: center;
 	background-color:var(--primary-100);
@@ -20,7 +30,6 @@
 .ul-disc {
 	list-style:disc;
     margin-left: 1.5em;
-	margin-bottom: 12px;
 }
 
 .ul-border {

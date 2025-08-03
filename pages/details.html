@@ -10,117 +10,123 @@
 
     <%- include("./layout/nav") %>  
 
-    <main class="container  mb-40">
-      <div class="row py-64">
-        <div class="col-7">
-            <!--產品圖片-->
-            <ul class="product-row">
-                    <li class="product-col mb-8">
-                    <img src="../assets/images/image.png" 
-                    alt="image"
-                    class="img-size">
+    <main class="container mb-40">
+        <div class="row py-64 py-0-md">
+            <div class="col-7 col-md-4 mb-24-md">
+                <!--產品圖片-->
+                <ul class="product-row scroll-x-md row-md-scroll"><!--scroll設定在 indexStytle裡-->
+                    <li class="product-col mb-8 mb-0-md mb-0-md product-col-scroll">
+                        <img src="../assets/images/image.png" 
+                        alt="image"
+                        class="img-size">
                     </li>
-                    <li class="product-col mb-8">
-                    <img src="../assets/images/image-1.png" 
-                    alt="image-1"
-                    class="img-size">
+                    <li class="product-col mb-8 mb-0-md product-col-scroll">
+                        <img src="../assets/images/image-1.png" 
+                        alt="image-1"
+                        class="img-size">
                     </li>
-                    <li class="product-col mb-8">
-                    <img src="../assets/images/image-2.png" 
-                    alt="image-2"
-                    class="img-size">
+                    <li class="product-col mb-8 mb-0-md product-col-scroll">
+                        <img src="../assets/images/image-2.png" 
+                        alt="image-2"
+                        class="img-size">
                     </li>
-                    <li class="product-col mb-8">
-                    <img src="../assets/images/image-3.png" 
-                    alt="image-3"
-                    class="img-size">
+                    <li class="product-col mb-8 mb-0-md product-col-scroll">
+                        <img src="../assets/images/image-3.png" 
+                        alt="image-3"
+                        class="img-size">
                     </li>
-                    <li class="product-col mb-8">
-                    <img src="../assets/images/image-4.png" 
-                    alt="image-4"
-                    class="img-size">
+                    <li class="product-col mb-8 mb-0-md product-col-scroll">
+                        <img src="../assets/images/image-4.png" 
+                        alt="image-4"
+                        class="img-size">
                     </li>
-                    <li class="product-col mb-8">
-                    <img src="../assets/images/image-5.png" 
-                    alt="image-5"
-                    class="img-size">
+                    <li class="product-col mb-8 mb-0-md product-col-scroll">
+                        <img src="../assets/images/image-5.png" 
+                        alt="image-5"
+                        class="img-size">
                     </li>
-                    <li class="product-col">
-                    <img src="../assets/images/image-6.png" 
-                    alt="image-6"
-                    class="img-size">
+                    <li class="product-col product-col-scroll">
+                        <img src="../assets/images/image-6.png" 
+                        alt="image-6"
+                        class="img-size">
                     </li>
-                    <li class="product-col">
-                    <img src="../assets/images/image-7.png" 
-                    alt="image-7"
-                    class="img-size">
+                    <li class="product-col product-col-scroll">
+                        <img src="../assets/images/image-7.png" 
+                        alt="image-7"
+                        class="img-size">
                     </li>
-            </ul>
-        </div>
-        <div class="col-5">
-            <!-- Breadcrumb 麵包屑 -->
-            <div class="mb-32">
-                <nav class="mb-12">
-                    <ol class="d-f ">
-                        <li class="breadcrumb-item">
-                            <a href="" class="breadcrumb-link">首頁</a>
-                        </li>
-                        <li class="breadcrumb-item breadcrumb-link">女鞋</li>
-                        <li class="breadcrumb-item breadcrumb-link">滑板鞋</li>
-                        <li class="breadcrumb-item">Platform 404</li>
-                    </ol>
-                </nav>
-                <div>
-                    <h1 class="h2 mb-16">Platform 404</h1>
-                    <p class="pe-8 h5 text-primary-400 mb-16">NT$2,600 <del class="text-sm text-stytle">NT$3,200</del></p>
-                </div>
-                <div>
-                    <p class="pb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
-                    <p class="">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
-                </div>
+                </ul>
             </div>
-            <!--商品顏色-->
-            <div class="mb-32">
-                <h3 class="mb-8">顏色</h3>
-                <div class="d-f">
-                    <button class="pe-8 product-stytle">
-                        <img src="../assets/images/product.png" 
-                        alt="product"
-                        class="mb-4">
-                        <p>藍色</p>
-                    </button>
-                    <button class="pe-8 product-stytle">
-                        <img src="../assets/images/product-1.png" 
-                        alt="product-1"
-                        class="mb-4">
-                        <p>卡其色</p>
-                    </button>
+            <div class="col-5 col-md-4">
+                <!-- Breadcrumb 麵包屑 -->
+                <div class="mb-32">
+                    <nav class="mb-12 mb-8-md">
+                        <ol class="d-f">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="breadcrumb-link text-md">首頁</a>
+                            </li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link text-md" href="list.html">女鞋</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-link text-md" href="list.html">滑板鞋</a></li>
+                            <li class="breadcrumb-item text-md">Platform 404</li>
+                        </ol>
+                    </nav>
+                    <div>
+                        <h1 class="h2 mb-16 h4-md mb-12-md">Platform 404</h1>
+                        <p class="pe-8 h5 text-primary-400 mb-16 h6-md mb-12-md">NT$2,600 <del class="text-sm text-stytle">NT$3,200</del></p>
+                    </div>
+                    <div>
+                        <p class="pb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+                        <p class="">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+                    </div>
                 </div>
-
-            </div>
-            <!--商品尺吋-->
-            <div class="mb-48">
+                <!--商品顏色-->
+                <div class="mb-32 mb-24-md">
+                    <h3 class="mb-8">顏色</h3>
+                    <div class="d-f">
+                        <div class="product-stytle me-8">
+                            <img src="../assets/images/product.png" 
+                            alt="product"
+                            class="mb-4">
+                            <p class="h6 text-fw">藍色</p>
+                        </div>
+                        <div class="product-stytle">
+                            <img src="../assets/images/product-1.png" 
+                            alt="product-1"
+                            class="mb-4">
+                            <p class="h6 text-fw">卡其色</p>
+                        </div>
+                    </div>
+                </div>
+                <!--商品尺吋-->
+                <div class="mb-48 mb-24-md">
                 <h3 class="mb-8">尺寸</h3>
-                <div class="d-f flex-wrap">
-                    <button class="btn btn-wrapper mb-8 me-8 active">35(22.5cm)</button>
-                    <button class="btn btn-wrapper mb-8 me-8">36(23.0cm)</button>
-                    <button class="btn btn-wrapper mb-8">37(23.5cm)</button>
-                    <button class="btn btn-wrapper mb-8 me-8">38(24.0cm)</button>
-                    <button class="btn btn-wrapper mb-8 me-8">39(24.5cm)</button>
-                    <button class="btn btn-wrapper mb-8">40(25.0cm)</button>
-                    <button class="btn btn-wrapper mb-8 me-8">41(26.0cm)</button>
-                    <button class="btn btn-wrapper mb-8 me-8 btn-disabled" disabled>42(26.5cm)</button>
-                    <button class="btn btn-wrapper mb-8 btn-disabled" disabled>43(27.0cm)</button>
+                <div class="d-f flex-wrap gap-8">
+                    <button class="btn btn-wrapper active">35(22.5cm)</button>
+                    <button class="btn btn-wrapper">36(23.0cm)</button>
+                    <button class="btn btn-wrapper">37(23.5cm)</button>
+                    <button class="btn btn-wrapper">38(24.0cm)</button>
+                    <button class="btn btn-wrapper">39(24.5cm)</button>
+                    <button class="btn btn-wrapper">40(25.0cm)</button>
+                    <button class="btn btn-wrapper">41(26.0cm)</button>
+                    <button class="btn btn-wrapper btn-disabled" disabled>42(26.5cm)</button>
+                    <button class="btn btn-wrapper btn-disabled" disabled>43(27.0cm)</button>
                 </div>
                 <p class="text-sm text-danger">僅剩 3 雙</p>
-            </div>
-            <!--商品購買-->
-            <div class="d-f mb-32">
-                <a href="#"><button class="btn btn-900 me-8 btn-size"><i class="bi bi-heart me-8"></i>加入收藏</button></a>
-                <a href="#"><button class="btn btn-bark btn-size"><i class="bi bi-handbag me-8"></i>門市預約試穿</button></a>
-            </div>
-            <!--商品說明-->
-            <div>
+                </div>
+                <!--商品購買-->
+                <div class="d-f mb-32 gap-8">
+                    <a class="btn-a-size a-heart-md d-n-sm d-n-md" href="#"><button class="btn btn-lg btn-size btn-900"><i class="bi bi-heart me-8"></i>加入收藏</button></a>
+                    <a class="btn-a-size a-handbag-md" href="#"><button class="btn btn-lg btn-size btn-bark"><i class="bi bi-handbag me-8"></i>門市預約試穿</button></a>
+                    <a class="d-n d-f-md d-f-sm" href="#">
+                        <button class="btn btn-lg btn-size">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+                <!--商品說明-->
+                <div>
                 <div class="py-12 border-bottom">
                     <p class="text-fw pb-4">商品材質</p>
                     <ul class="text-neutral-600">
@@ -146,15 +152,15 @@
                         <li>若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</li>
                     </ul>
                 </div>
+                </div>
             </div>
         </div>
-      </div>
         <!--商品推薦-->
-        <div class="row py-48">
+        <div class="row py-48 py-40-md">
             <div class="col-12">
                 <p class="h4 mb-16">你可能也喜歡...</p>
-                <ul class="row">
-                    <li class="col-3">
+                <ul class="row scroll-x-md row-md-scroll">
+                    <li class="col-3 col-md-scroll">
                         <div class="card-body">
                             <a href="#">
                                 <img src="../assets/images/product-2.png" 
@@ -165,7 +171,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="col-3">
+                    <li class="col-3 col-md-scroll">
                         <div class="card-body">
                             <a href="#">
                                 <img src="../assets/images/product-3.png" 
@@ -176,7 +182,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="col-3">
+                    <li class="col-3 col-md-scroll">
                         <div class="card-body">
                             <a href="#">
                                 <img src="../assets/images/product-5.png" 
@@ -187,7 +193,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="col-3">
+                    <li class="col-3 col-md-scroll">
                         <div class="card-body">
                             <a href="#">
                                 <img src="../assets/images/product-7.png" 
