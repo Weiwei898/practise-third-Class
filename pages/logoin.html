@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collect page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+     <%- include("./layout/nav") %>
+    <main class="container my-64 my-0-mb mb-32-md">
+        <div class="row">
+            <div class="col-5 align-center col-md-4 fxd-c-md d-n-m">
+               <img class="imgimg" src="../assets/images/week3-4/login.png" alt="login">
+            </div>
+            <div class="col-5 align-center col-md-4 fxd-c-md d-n d-f-m">
+               <img class="imgimg" src="../assets/images/week3-4/login-sm.png" alt="login">
+            </div>
+            <div class="col-7 col-md-4 logoin-bg-img logoin-bg-img-md">
+                <div class="row justify-center">
+                    <div class="col-10 logoin-stytle logoin-stytle-md">
+                        <h1 class="h3 mb-32 text-center h4-md mb-24-md">歡迎！</h1>
+                        <input type="radio" name="tab" id="tab-login" checked>
+                        <input type="radio" name="tab" id="tab-register">
+                        <div class="d-f text-center mb-32 tab-labels mb-24-md">
+                            <label for="tab-login" class="tab-label h6 logoin py-12">登入</label>
+                            <label for="tab-register" class="tab-label h6 register py-12">註冊</label>
+                        </div>
+                        <div class="tab-content">
+                            <!--登入-->
+                            <div class="d-f fxd-c content login-content">
+                                <a class="mb-8 btn-neutral-300" href="#">
+                                <button class="d-f align-center btn">
+                                <img class="me-12" src="../assets/images/week3-4/facebook.svg" alt="Facebooklgo">
+                                <p>Facebook 登入</p>
+                                </button>
+                                </a>
+                                <a class="mb-8 btn-neutral-300" href="#">
+                                <button class="d-f align-center btn">
+                                <img class="me-12" src="../assets/images/week3-4/apple.svg" alt="Applelgo">
+                                <p>Apple 登入</p>
+                                </button>
+                                </a>
+                                <a class="btn-neutral-300" href="#">
+                                <button class="d-f align-center btn">
+                                    <img class="me-12" src="../assets/images/week3-4/google.svg" alt="Googlelgo">
+                                    <p>Google 登入</p>
+                                </button>
+                                </a>
+                            </div>
+                            <!--註冊-->
+                            <div class="d-f fxd-c register-stytle content register-content">
+                                <a class="mb-8 btn-neutral-300" href="#">
+                                <button class="d-f align-center btn">
+                                <img class="me-12" src="../assets/images/week3-4/facebook.svg" alt="Facebooklgo">
+                                <p>Facebook 註冊</p>
+                                </button>
+                                </a>
+                                <a class="mb-8 btn-neutral-300" href="#">
+                                <button class="d-f align-center btn">
+                                <img class="me-12" src="../assets/images/week3-4/apple.svg" alt="Applelgo">
+                                <p>Apple 註冊</p>
+                                </button>
+                                </a>
+                                <a class="btn-neutral-300" href="#">
+                                <button class="d-f align-center btn">
+                                    <img class="me-12" src="../assets/images/week3-4/google.svg" alt="Googlelgo">
+                                    <p>Google 註冊</p>
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </main>
+     <%- include("./layout/footer") %>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

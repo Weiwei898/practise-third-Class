@@ -118,9 +118,10 @@ a {
 /*通用樣式*/
 .container{
 	max-width: 1320px;/*RwD要這樣設定->max 因為盒模型左右加了12px所以width要加24px撐開*/
+	margin: 0 auto;
 	padding-left: 12px;/*RWD留邊*/
 	padding-right: 12px;/*RWD留邊*/
-	margin: 0 auto;
+	
 }
 
 
@@ -236,6 +237,41 @@ a {
 		padding-left: 6px;
 		width: 100%;
 	}
+
+	
+}
+
+@media (max-width:375px){/*裝置小於767套用*/
+	.row {/*父層排列樣式，因為欄位有推12px，所以要減12px)*/
+		margin-right: -6px;
+		margin-left: -6px;
+	}
+
+	.col-sm-1 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: calc(100% / 4 * 1);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+	}
+
+	.col-sm-2 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: calc(100% / 4 * 2);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+	}
+
+	.col-sm-3 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: calc(100% / 4 * 3);/*欄位樣式，100%除12欄(設計槁shift+G)，乘n就是佔n個欄位寬度*/
+	}
+
+	.col-sm-4 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: 100%;
+	}
+
+	
 }
 
 .main-h1 {
@@ -300,7 +336,7 @@ a {
 	.h6-md.h6-md {
 		font-size: 16px;
 	}
-	.text-md {
+	.text-md.text-md {
 		font-size: 14px;
 	}
 }
@@ -356,6 +392,10 @@ a {
 	color: var(--danger-300);
 }
 
+.bg-primary-100 {
+	background: var(--primary-100);
+}
+
 .bg-primary-200 {
 	background: var(--primary-200);
 }
@@ -368,37 +408,43 @@ a {
 	padding: 12px;
 }
 
-
 .p-32 {
 	padding: 32px;
 }
 
 .py-8 {
-	padding: 8px 0;/*上下 右左*/
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .py-12 {
-	padding: 12px 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .py-16 {
-	padding: 16px 0;/*上下 右左*/
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .py-24 {
-	padding: 24px 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 .py-32 {
-	padding: 32px 0;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 .py-48 {
-	padding: 48px 0;
+	padding-top: 48px;
+	padding-bottom: 48px;
 }
 
 .py-64 {/*通常距離設計會是4跟8的倍數，所以也可以統一py-64->py-16*/
-	padding: 64px 0;
+	padding-top: 64px;
+	padding-bottom: 64px;
 }
 
 .pt-32 {
@@ -478,11 +524,13 @@ a {
 }
 
 .my-48 {
-	margin: 48px 0;
+	margin-top: 48px;
+	margin-bottom: 48px;
 }
 
 .my-64 {
-	margin: 64px 0;
+	margin-top: 64px;
+	margin-bottom: 64px;
 }
 
 .me-8 {
@@ -491,6 +539,10 @@ a {
 
 .me-12 {
 	margin-right: 12px;
+}
+
+.me-16 {
+	margin-right: 16px;
 }
 
 .me-24 {
@@ -505,6 +557,10 @@ a {
 	margin-right: 48px;
 }
 
+.ms-16 {
+	margin-left: 16px;
+}
+
 .gap-8 {
 	gap: 8px;
 }
@@ -515,15 +571,18 @@ a {
 	}
 
 	.py-0-md {
-		padding: 0px 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 
 	.py-16-md {
-		padding: 16px 0;
+		padding-top: 16px;
+		padding-bottom: 16px;
 	}
 
 	.py-40-md {
-		padding: 40px 0;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 	.pb-0-md {
@@ -583,7 +642,18 @@ a {
 	}
 
 	.my-64-md {
-		margin: 64px 0;
+		margin-top: 64px;
+		margin-bottom: 64px;
+	}
+
+	.my-24-md {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
+	.my-0-mb {
+		margin-top: 24px;
+		margin-bottom: 24px;
 	}
 
 	.me-0-md {
@@ -617,11 +687,13 @@ a {
 	}
 
 	.py-0-sm {
-		padding: 0px 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 
 	.py-16-sm {
-		padding: 16px 0;
+		padding-top: 16px;
+		padding-bottom: 16px;
 	}
 
 	.pb-0-sm {
@@ -681,7 +753,8 @@ a {
 	}
 
 	.my-64-sm {
-		margin: 64px 0;
+		margin-top: 64px;
+		margin-bottom: 64px;
 	}
 
 	.me-0-sm {
@@ -723,6 +796,10 @@ a {
 	display: none;
 }
 
+.d-b {
+		display: block;
+	}
+
 .justify-between {
 	justify-content:space-between;/*jcsb*/
 }
@@ -733,6 +810,10 @@ a {
 
 .align-center {
 	align-items: center;/*交錯軸置中 aic*/
+}
+
+.align-start {
+	align-items: flex-start;/*交錯軸置中 aic*/
 }
 
 .align-end {
@@ -752,13 +833,29 @@ a {
 	text-align: center;
 }
 
+.text-start {
+	text-align:start;
+}
+
 .flex-fill {
 	flex: 1 1 auto;/*自動填滿空間*/
+}
+
+.flex-grow {
+	flex-grow:1;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
 @media (max-width:767px){/*裝置小於767套用*/
 	.fxd-c-md {
 		flex-direction: column;/*垂直*/
+	}
+
+	.align-center-md {
+	align-items: center;/*交錯軸置中 aic*/
 	}
 
 	.d-b-md {
@@ -871,6 +968,8 @@ a {
 	color: var(--neutral-0);
 }
 
+
+
 .btn-bark:hover {
 	background: var(--neutral-700);
 }
@@ -895,4 +994,8 @@ a {
 
 .border-top {
 	border-top: 1px solid var(--neutral-300);/*bdt+*/
+}
+
+.border-bottom {
+	border-bottom: 1px solid var(--neutral-300);/*bdt+*/
 }

@@ -23,10 +23,6 @@
 	background-color:var(--primary-100);
 }
 
-.border-bottom {
-	border-bottom: 1px solid var(--neutral-300);/*bdt+*/
-}
-
 .ul-disc {
 	list-style:disc;
     margin-left: 1.5em;

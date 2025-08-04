@@ -1,0 +1,100 @@
+.imgimg{
+    width: 100%;  
+    display: block;    /*消除底部空白*/
+    margin-left: auto;
+    margin-right: auto;/*圖片在 col-5 中置中*/
+}
+
+.logoin-stytle {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.logoin-bg-img{
+    background-image: url('../images/week3-4/login-bg.png');
+    border-radius: 12px;/*bdrs*/
+}
+
+.logoin {
+    width: 50%;
+    border-bottom: 2px solid var(--neutral-300);/*bdt+*/
+    color: var(--neutral-600);
+}
+
+.register {
+    width: 50%;
+    border-bottom: 2px solid var(--neutral-300);/*bdt+*/
+    color: var(--neutral-600);
+}
+
+.register:active {
+    border-bottom: 2px solid var(--neutral-900);/*bdt+*/
+    color: var(--neutral-900);
+}
+
+.logoin:active {
+    border-bottom: 2px solid var(--neutral-900);/*bdt+*/
+    color: var(--neutral-900);
+}
+
+.btn-neutral-300{
+	background: var(--neutral-0);
+	border: 1px solid var(--neutral-300);/*bdt+*/
+    border-radius: 4px;/*bdrs*/
+    
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab-content .content {
+  display: none;
+}
+
+/* 選中狀態對應內容顯示 */
+#tab-login:checked ~ .tab-content .login-content {
+  display: block;
+}
+
+#tab-register:checked ~ .tab-content .register-content {
+  display: block;
+}
+
+/* 活動 tab 樣式 */
+#tab-login:checked ~ .tab-labels label[for="tab-login"],
+#tab-register:checked ~ .tab-labels label[for="tab-register"] {
+  border-bottom: 2px solid black;
+}
+
+@media (max-width:1200px){
+	 .fxd-c-lg {
+        flex-direction: column;
+     }
+
+     .logoin-stytle-md {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .col-md-4 {
+		padding-right: 6px;
+		padding-left: 6px;
+		width: 100%;
+	}
+
+}
+
+@media (max-width:767px){
+    .logoin-stytle-md {
+        padding-top: 32px;
+        padding-bottom: 0px;
+    }
+
+    .logoin-bg-img-md{
+        background-image: none;
+        border: none;
+    }
+}
+
